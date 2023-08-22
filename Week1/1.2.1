@@ -1,0 +1,175 @@
+Week 1 
+Course Overview:
+week-1-2 : Introduction & Prerequisite
+week-3   : Workflow Orchestration (Prefect)
+Week-4   : Data Warehouse (Big Query)
+Week-5   : Analytics engineering (DBT)
+Week-6   : Batch Processing (Spark)
+Week-7   : Streaming (Kafka)
+Week-8-10: Project  
+
+###week-1-2  : Introduction & Prerequisites
+
+- Is will take 2 weeks to finish below topics
+
+- Setting up the environment
+    - Google Cloud Account
+    - Docker
+    - Terraform
+
+- Running Postgres in Docker
+
+- Taking a look at the NY taxi dataset
+
+- SQl refresher
+
+###week-3   : Workflow Orchestration (Prefect)
+
+- Data Lake 
+- Workflow Orchestration
+- Introduction to Prefect
+- ETL with GCP & Prefect
+- Parametrizing workflows
+- Prefect Cloud and additional resources
+
+###Week-4   : Data Warehouse (Big Query)
+
+- What is Data warehouse
+
+- BigQuery
+    - Partitioning and Clustering
+    - With Prefect
+    - Best practices
+
+###Week-5   : Analytics engineering (DBT)
+
+- What is DBT and How does it fit the tech Stack?
+
+- Using DBT:
+    - Anatomy of a DBT model
+    - Seeds
+    - Jinja, Macros and tests
+    - Documentation
+    - Packages
+
+- Build a dashboard in Google Data Studio
+
+###Week-6   : Batch Processing (Spark)
+- Spark Internals
+- Broadcasting
+- Partitioning 
+- Shuffling
+
+###Week-7   : Streaming (Kafka)
+
+- Basics of Kafka
+- Consumer - Producer
+- Kafka Streams
+- Kafka Connect 
+
+###Week-8-10 : Project 
+
+- Putting everything we learned in practice 
+
+
+
+Technologies: 
+
+- Google Cloud Platform (GCP) 
+    - Cloud based auto scaling platform
+    - GCS [Google Cloud Storage]
+    - Big Query [Data Warehouse]
+
+- Terraform
+    - Infrastructure as Code (IaC)
+
+- Docker
+    - Containerization
+
+- SQL 
+    - Data Analysis & Exploration
+
+- Prefect 
+    - Pipeline Orchestration 
+
+- DBT
+    - Data Transformation
+
+- Spark 
+    - Distributed Processing
+
+- Kafka 
+    - Streaming 
+
+##Week:1 (22/08/2023) / week 34 
+
+###1.1.1 - Introduction to GCP (Google Cloud Platform)
+
+- This a introduction to the GCP 
+
+###1.2.1 - Introduction to Docker
+
+Topic in this video : 
+    - Why do we need Docker
+        - Creating a simple "data pipeline" in Docker
+
+Topics related to Docker 
+- What Docker is, Why we need it ?
+- Running postgres locally with docker
+- Putting some data for testing to local postgres with Python
+- Packing this script in docker
+- Running postgres and the script in one network
+- Docker compose and running pgadmin and postgres together with docker-compose
+
+Data pipeline is fancy name for the process or service (python script) that gets in data(source)  and produce the processed  data(dest).
+
+ex:  csv    =>      python script   => Table in postgres
+   (source)     (process / service)       (dest)
+
+Data pipeline can have multiple input sources and inside the pipeline it can have many steps and its outputs the data to some destination 
+
+Docker: 
+
+docker is container, we can create multiple dockers as per our requirements.
+ex:
+1. we have created a  Ubuntu 20.4 docker image in  windows host for the Data Pipeline.
+- Installing the python 3.9
+- Pandas 
+- Postgres Connection library 
+
+2. We have created postgres database in the docker, and we have another version of postgres database installed in the host machine, where these two doesn't have any conflit. like this we can create a multiple docker file 
+
+the good thing about the docker is it is a reproducibility, we can use the same docker image on different machine, where it will have configuration. 
+
+## Why should we care about docker?
+- Local experiments
+- Integration tests (CI/CD) CI/Cd are not covered in this course
+- Reproducibility
+- Running pipelines on the cloud (AWS Batch, Kubernetes jobs)
+- Spark 
+- Serverless (AWS Lambda, Google functions)
+ 
+Working with docker  file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
